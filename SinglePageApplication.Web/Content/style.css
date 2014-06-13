@@ -7,23 +7,31 @@
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #a3d263;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 .navbar-toggle .icon-bar {
   background-color: #f7f8f9;
 }
-blockquote {
-  margin-top: 20px;
-  color: #a5a5a5;
-}
-.nav li {
+* {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+::selection {
+  background: #8cc63c;
+  color: #f7f8f9;
+}
+a {
+  color: #668f2d;
+  text-decoration: none;
+}
+a:hover {
+  color: #8dc63f;
+  text-decoration: none;
+}
+blockquote {
+  margin-top: 20px;
+  color: #a5a5a5;
 }
 .nav li.active {
   background-color: #71a02f;

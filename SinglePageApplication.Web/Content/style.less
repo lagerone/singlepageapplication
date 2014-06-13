@@ -6,10 +6,10 @@
 @navLineHeight: 24px;
 
 .transition(@prop: all, @dur: .5s, @tran: ease-in-out ) {
-    -moz-transition: @prop  @dur @tran;
-    -o-transition: @prop  @dur @tran;
-    -webkit-transition: @prop  @dur @tran;
-    transition: @prop  @dur @tran;
+    -moz-transition: @prop @dur @tran;
+    -o-transition: @prop @dur @tran;
+    -webkit-transition: @prop @dur @tran;
+    transition: @prop @dur @tran;
 }
 
 // BOOTSTRAP OVERRIDES
@@ -22,7 +22,6 @@
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: lighten(@ninjaGreen, 10%);
-    .transition();
 }
 
 .navbar-toggle {
@@ -33,6 +32,25 @@
 
 // APP STYLES
 // ------------------------------------------------
+* {
+    .transition();
+}
+
+::selection {
+    background: @ninjaGreen;
+    color: @ninjaWhite;
+}
+
+a {
+    color: #668f2d;
+    text-decoration: none;
+
+    &:hover {
+        color: #8dc63f;
+        text-decoration: none;
+    }
+}
+
 blockquote {
     margin-top: 20px;
     color: darken(@ninjaGray, 30);
@@ -40,12 +58,10 @@ blockquote {
 
 .nav {
     li {
-        .transition();
         &.active {
             background-color: darken(@ninjaGreen, 10%);
         }
     }
-   
 }
 
 .ninja-icon {
