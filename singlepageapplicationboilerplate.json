@@ -1,0 +1,33 @@
+{
+  "name": "single-page-application-boilerplate",
+  "knowabungaDisplayName": "Single Page Application boilerplate",
+  "version": "0.0.1",
+  "description": "A single page application boilerplate project on ASP.NET on the backend and Durandal on the frontend.",
+  "license" : "MIT",
+  "contributors": [{
+      "name": "Daniel Lager",
+      "email": "daniel.lager@tretton37.com"
+    }, {
+      "name": "Emy Spjuth",
+      "email": "emy.spjuth@tretton37.com"
+    }, {
+      "name": "Martin Thern",
+      "email": "thern@tretton37.com"
+    }
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lagerone/singlepageapplication.git"
+  },
+  "homepage": "https://github.com/lagerone/singlepageapplication.git",
+  "keywords": ["template", "singlepageapplication", "spa", "webapi", "mvc", "durandal", "knockoutjs", "requirejs"],
+  "_knowabungaCategories": [
+    "web-application", 
+    "mobile-web",
+    "single-page-app",
+    "background-job",
+    "desktop-app",
+    "windows-phone"
+  ],
+  "knowabungaCategory": "single-page-app"
+}
