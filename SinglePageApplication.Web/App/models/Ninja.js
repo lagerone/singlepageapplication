@@ -8,6 +8,7 @@
         this.detailsUrl = this.getDetailsUrl(this.id);
         this.imageUrl = data.imageUrl;
         this.messages = ko.observableArray(data.messages);
+        this.description = data.description;
     };
 
     Ninja.prototype = {

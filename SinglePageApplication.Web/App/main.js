@@ -18,7 +18,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'extensions/k
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Knowaninja';
+    app.title = 'KNOWANINJA';
 
     app.configurePlugins({
         router: true,

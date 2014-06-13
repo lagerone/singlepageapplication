@@ -1,13 +1,20 @@
-﻿// VARIABLES 
+﻿// VARIABLES & MIXINS
 // ------------------------------------------------
-@ninjaWhite:  #f7f8f9;
+@ninjaWhite: #f7f8f9;
 @ninjaGreen: #8cc63c;
 @ninjaGray: #f2f2f2;
 @navLineHeight: 24px;
 
+.transition(@prop: all, @dur: .5s, @tran: ease-in-out ) {
+    -moz-transition: @prop  @dur @tran;
+    -o-transition: @prop  @dur @tran;
+    -webkit-transition: @prop  @dur @tran;
+    transition: @prop  @dur @tran;
+}
+
 // BOOTSTRAP OVERRIDES
 // ------------------------------------------------
- .nav > li > a, .nav > li > a {
+.nav > li > a, .nav > li > a {
     font-size: 18px;
     line-height: @navLineHeight;
 }
@@ -15,6 +22,7 @@
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: lighten(@ninjaGreen, 10%);
+    .transition();
 }
 
 .navbar-toggle {
@@ -23,15 +31,30 @@
     }
 }
 
-// APP STYLES 
+// APP STYLES
 // ------------------------------------------------
- .ninja-icon {
-     width: 50px;
-     height: 39px;
-     margin: 0 20px 0 0;
-     background-repeat: no-repeat;
-     background-position: -39px -66px;
- }
+blockquote {
+    margin-top: 20px;
+    color: darken(@ninjaGray, 30);
+}
+
+.nav {
+    li {
+        .transition();
+        &.active {
+            background-color: darken(@ninjaGreen, 10%);
+        }
+    }
+   
+}
+
+.ninja-icon {
+    width: 50px;
+    height: 39px;
+    margin: 0 20px 0 0;
+    background-repeat: no-repeat;
+    background-position: -39px -66px;
+}
 
 .navbar-1337 {
     background: @ninjaGreen;
@@ -52,6 +75,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
         padding: 0;
         margin: 0 0 20px 0;
@@ -72,11 +96,11 @@
         &:nth-child(even) {
             background: lighten(@ninjaGray, 3%);
         }
+
         &:nth-child(odd) {
             background: @ninjaGray;
         }
     }
-
 }
 
 // APP LOADER STYLES
