@@ -1,13 +1,13 @@
 # Single Page Application boilerplate
-A single page application that can read from and write to a database by communicating with a web api.
+A single page application boilerplate project based on ASP.NET on the backend and Durandal on the frontend. Weyland is used to build the JavaScript and HTML files used by the applications. Example views for displaying and updating data is included.
 
 ## Building blocks
-The perfect stack template consists of 
+This project is built with the following components:
 
-* [Durandal](http://durandaljs.com/)
+* [Durandal](http://durandaljs.com/) - a mix of popular JS frameworks to build SPA applications
 * [ASP.NET Web API 2](http://www.asp.net/web-api)
 * [ASP.NET MVC 5](http://www.asp.net/mvc)
-* [StructureMap IoC](https://github.com/structuremap/structuremap)
+* [StructureMap](https://github.com/structuremap/structuremap) - IoC/DI framework
 
 ### Prerequisites
 * [Visual Studio 2013](http://www.visualstudio.com/)
@@ -15,7 +15,11 @@ The perfect stack template consists of
 * [NodeJS](http://nodejs.org)
 
 ### Installation
-    git clone http://..... 
+Clone the source from GitHub, like this:
+
+    git clone https://github.com/lagerone/singlepageapplication.git
+
+Install the Weyland package, that is used to build the Durandal files in Release mode:
 
     npm install -g weyland
 
