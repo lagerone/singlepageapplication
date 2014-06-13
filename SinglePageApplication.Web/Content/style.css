@@ -1,0 +1,83 @@
+﻿.nav > li > a,
+.nav > li > a {
+  font-size: 18px;
+  line-height: 24px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #a3d263;
+}
+.navbar-toggle .icon-bar {
+  background-color: #f7f8f9;
+}
+.ninja-icon {
+  width: 50px;
+  height: 39px;
+  margin: 0 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: -39px -66px;
+}
+.navbar-1337 {
+  background: #8cc63c;
+  border-radius: 0;
+  border: none;
+}
+.navbar-1337 a {
+  color: #f7f8f9;
+}
+.navbar-1337 .navbar-brand {
+  font-size: 24px;
+  line-height: 24px;
+}
+.ninja-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ninja-list li {
+  padding: 0;
+  margin: 0 0 20px 0;
+  line-height: 39px;
+  background-color: #f2f2f2;
+}
+.ninja-messages {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.ninja-messages li {
+  margin: 0;
+  padding: 10px;
+}
+.ninja-messages li:nth-child(even) {
+  background: #fafafa;
+}
+.ninja-messages li:nth-child(odd) {
+  background: #f2f2f2;
+}
+.splash {
+  text-align: center;
+  margin: 10% 0 0 0;
+}
+.splash .message {
+  font-size: 5em;
+  line-height: 1.5em;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-transform: uppercase;
+}
+.splash .icon-spinner {
+  text-align: center;
+  display: inline-block;
+  font-size: 5em;
+  margin-top: 50px;
+}
+.loader {
+  padding: 10px;
+  visibility: hidden;
+}
+.loader.active {
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */

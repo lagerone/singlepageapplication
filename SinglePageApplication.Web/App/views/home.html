@@ -1,0 +1,13 @@
+﻿<section class="row">
+    <div class="col-lg-12">
+        <h2>Ninjas</h2>
+        <ul data-bind="foreach: ninjas" class="ninja-list">
+            <li>
+                <div class="pull-left ninja-icon" data-bind="attr: { 'style': 'background-image: url(' + imageUrl + ')' }"></div>
+                <a data-bind="attr: { href: detailsUrl }">
+                    <span data-bind="text: name"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,111 @@
+﻿// VARIABLES 
+// ------------------------------------------------
+@ninjaWhite:  #f7f8f9;
+@ninjaGreen: #8cc63c;
+@ninjaGray: #f2f2f2;
+@navLineHeight: 24px;
+
+// BOOTSTRAP OVERRIDES
+// ------------------------------------------------
+ .nav > li > a, .nav > li > a {
+    font-size: 18px;
+    line-height: @navLineHeight;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: lighten(@ninjaGreen, 10%);
+}
+
+.navbar-toggle {
+    .icon-bar {
+        background-color: @ninjaWhite;
+    }
+}
+
+// APP STYLES 
+// ------------------------------------------------
+ .ninja-icon {
+     width: 50px;
+     height: 39px;
+     margin: 0 20px 0 0;
+     background-repeat: no-repeat;
+     background-position: -39px -66px;
+ }
+
+.navbar-1337 {
+    background: @ninjaGreen;
+    border-radius: 0;
+    border: none;
+
+    a {
+        color: @ninjaWhite;
+    }
+
+    .navbar-brand {
+        font-size: @navLineHeight;
+        line-height: @navLineHeight;
+    }
+}
+
+.ninja-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding: 0;
+        margin: 0 0 20px 0;
+        line-height: 39px;
+        background-color: @ninjaGray;
+    }
+}
+
+.ninja-messages {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 10px;
+
+        &:nth-child(even) {
+            background: lighten(@ninjaGray, 3%);
+        }
+        &:nth-child(odd) {
+            background: @ninjaGray;
+        }
+    }
+
+}
+
+// APP LOADER STYLES
+// ------------------------------------------------
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-transform: uppercase;
+}
+
+.splash .icon-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.loader {
+    padding: 10px;
+    visibility: hidden;
+}
+
+.loader.active {
+    visibility: visible;
+}
