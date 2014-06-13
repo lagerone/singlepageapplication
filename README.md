@@ -1,5 +1,5 @@
 # Single Page Application boilerplate
-A single page application boilerplate project based on ASP.NET on the backend and Durandal on the frontend. Weyland is used to build the JavaScript and HTML files used by the application. Example views for displaying and updating data is included.
+A single page application boilerplate project based on ASP.NET on the backend and Durandal on the frontend. Weyland is used to build the JavaScript and HTML files used by the application. Example views for displaying and adding data is included.
 
 ## Building blocks
 This project is built with the following components:
